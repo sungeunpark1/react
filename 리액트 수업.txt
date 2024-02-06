@@ -1,0 +1,108 @@
+리액트 프론트 프레임워크로 가장 많이 사용되는게 리액트랴
+라이브러리 같은거래 기능을 가져다 쓰는것
+
+
+노드js로 리액트를 구현하는게 일반적이래
+
+## React 프로젝트 생성o
+npx create-react-app ./
+
+##프로젝트 실행
+npm run start
+
+src안에 있는 App.test.js는 테스트하라고 만들어져있는거 안쓰는거
+
+
+##미니프로젝트 초반에 
+App.css
+App.js
+index.css
+
+세개 지우기(우리가 꾸밀거)
+
+
+
+
+##틀 쉽게 만드는 거 깔기(비쥬얼스튜디오 안에있는)
+extensions에서 
+
+snippets쳐서
+
+ES7+ React/Redux/React-Native snippets이거 깔아주면
+
+App.js에서 
+rce치면
+틀 자동으로 만들어줌
+ex)
+import React, { Component } from 'react'
+
+export class App extends Component {
+  render() {
+    return (
+      <div>App</div>
+    )
+  }
+}
+export default App;
+
+
+
+
+js
+jsx(js의 확장)
+사용법
+<React.Fragment>로 감싸서 사용
+
+
+##리액트안의 아이콘 사용
+
+터미널에서 인스톨해주고
+npm install react-icons
+
+가져오는 홈페이지
+https://react-icons.github.io/react-icons/
+
+
+
+##데이터 전달
+props:Properties 줄임말
+
+1.상속하는 부모 컴포넌트로부터 자녀 컴포넌트에 데이터를 전달하는 방법
+2.props는 읽기전용(immutable)으로 자녀 컴포넌트에서 데이터를 전달 받으면 변하지 않음
+
+
+
+Map()
+배열에 있는 데이터를 하나하나 묶어주는 메서드
+
+
+filter() : 배열안에 있는 데이터걸러주는 메서드
+
+React State
+리엑트에서 데이터를 변할 때 화면을 다시 랜더링해주는 기능
+state 데이터가 변함에 따라 리랜더링을 함(component의 가장 중요한 역할을 한댜)
+
+
+Construct: 변수초기화
+super() > 자식클래스 내에서 부모클래스에 있는 생성자를 호출할 때 사용한다.
+
+super(props);
+-React,Component 객체 생성될 때 props 속성을 초기화하기 위해서 부모컴포넌트에 props 전달
+-생성자 내부에서 this.props를 정상적으로 사용할 수 있도록 보장하기 위해서
+
+
+[State,Props]
+State:변경가능
+Props:변경불가
+
+
+React Hook (2018년에 나온거래)
+state가 필요없는 기술
+코드가 간결해 진다.
+
+
+
+
+
+
+

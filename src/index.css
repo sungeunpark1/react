@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --primaryColor:#98A959;
+    --secondColor:#298872;
+    --mainWhite:#fff;
+    --mainBlack:#222;
+    --mainRed:#C45151;
+    --mainGreen:#4CAF50;
+}
+/*메인컬러를 변수 설정해주는 느낌이야 같은 부분 색깔을 한 번에 바꿀수 있는 부분이 유용하겠지 ??*/
+
+*{
+        margin:0;
+        box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background: var(--secondColor);
+    color:var(--mainBlack)
+}
+h1{
+    margin: 1rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+}
+.btn:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
